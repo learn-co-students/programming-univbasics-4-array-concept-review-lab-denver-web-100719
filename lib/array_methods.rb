@@ -1,11 +1,18 @@
 def find_element_index(array, value_to_find)
-  # Add your solution here
+  counter = 0
+ value = nil
+  while array[counter] do
+    if(value_to_find == array[counter])
+      value = value_to_find
+    counter += 1
+  end
+  value
 end
 
 def find_max_value(array)
-  # Add your solution here
+  array.max
 end
 
 def find_min_value(array)
-  # Add your solution here
+  array.min
 end
